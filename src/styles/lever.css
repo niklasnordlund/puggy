@@ -1,0 +1,18 @@
+.lever {
+  background: brown;
+  height: 100vh;
+  margin: 50px auto;
+  width: 25vw;
+}
+
+.lever:after {
+  content: "";
+  background: #000;
+  border-radius: 25vw;
+  display: block;
+  height: 50vw;
+  left: -12vw;
+  position: relative;
+  top: -5vw;
+  width: 50vw;
+}
