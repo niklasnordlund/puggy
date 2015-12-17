@@ -43,9 +43,9 @@ var SlotMachine = function () {
   }
 
   function isWin () {
-    return !!reels.reduce(function (firstPosition, current) {
-      return firstPosition === current.position() ? firstPosition : false;
-    }, reels[0].position());
+    return reels.every(function (reel) {
+      return this.position() === reel.position();
+    }, reels[0]);
   }
 
   function setMessage (message) {
